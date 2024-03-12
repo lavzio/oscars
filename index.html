@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OSCAR 2024</title>
+    <style>
+        /* Reset CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+            background-color: #a37474;
+        }
+
+        header {
+            background-color: #663939;
+            color: #ffdfdf;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            gap: 0px;
+            padding: 20px;
+        }
+
+        .noticia {
+            position: relative;
+            width: 100%
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 1px;
+        }
+
+        .noticia img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .texto-sobreposto {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 3px;
+            color: #fff;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .noticia:hover .texto-sobreposto {
+            opacity: 1;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>THE OSCARS 2024</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Principal</a></li>
+                <li><a href="#">Nomeações</a></li>
+                <li><a href="#">Looks</a></li>
+                <li><a href="#">Favoritos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="noticia">
+            <img src="oscars-2024-nominees.jpg" alt="Notícia 1">
+            <div class="texto-sobreposto">
+                <h2>Oscars 2024</h2>
+                <p>Tudo que você precisa saber sobre o maior evento de cinematografia que existe.</p>
+            </div>
+        </div>
+
+        <div class="noticia">
+            <img src="sim.jpg" alt="Notícia 2">
+            <div class="texto-sobreposto">
+                <h2>Nomeações</h2>
+                <p>Veja quais foram as principais nomeações.</p>
+            </div> 
+        </div>
+
+        <div class="noticia">
+            <img src="Design sem nome (1).jpg" alt="Notícia 3">
+            <div class="texto-sobreposto">
+                <h2>Roupas</h2>
+                <p>Veja as icônicas vestimentas do evento</p>
+            </div>
+        </div>
+
+        <div class="noticia">
+            <img src="nao.jpg" alt="Notícia 4">
+            <div class="texto-sobreposto">
+                <h2>Favoritos do público</h2>
+                <p>Conheça os mais listados nas redes sociais</p>
+            </div>
+        </div>
+        
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Portal de Notícias By Lavínia Fontes. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
